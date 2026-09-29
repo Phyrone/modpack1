@@ -11,7 +11,7 @@ packwiz modpack for **Minecraft 1.21.1 / NeoForge 21.1.252**.
 
    ```ini
    OverrideCommands=true
-   PreLaunchCommand="$INST_JAVA" -jar packwiz-installer-bootstrap.jar "https://raw.githubusercontent.com/Phyrone/modpack1/main/pack.toml"
+   PreLaunchCommand="$INST_JAVA" -jar packwiz-installer-bootstrap.jar -g "https://raw.githubusercontent.com/Phyrone/modpack1/main/pack.toml"
    ```
 
 ### Server
