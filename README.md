@@ -28,6 +28,50 @@ packwiz modpack for **Minecraft 1.21.1 / NeoForge 21.1.252**.
 java -jar packwiz-installer-bootstrap.jar -g -s server https://raw.githubusercontent.com/Phyrone/modpack1/main/pack.toml
 ```
 
+## Server (Docker)
+
+`docker-compose.yml` runs [itzg/docker-minecraft-server](https://docker-minecraft-server.readthedocs.io/en/latest/mods-and-plugins/packwiz/)
+with packwiz enabled and a local `./data` bind mount:
+
+```yaml
+services:
+  minecraft:
+    image: itzg/minecraft-server:java21
+    container_name: a-modpack-server
+    restart: unless-stopped
+    tty: true
+    stdin_open: true
+    ports:
+      - "25565:25565" # game
+      - "25575:25575" # RCON
+    environment:
+      EULA: "TRUE"
+      TYPE: "NEOFORGE"
+      VERSION: "1.21.1"
+      NEOFORGE_VERSION: "21.1.252"
+      PACKWIZ_URL: "https://raw.githubusercontent.com/Phyrone/modpack1/main/pack.toml"
+      MEMORY: "${MEMORY:-8G}"
+      MOTD: "A Modpack (packwiz)"
+      ONLINE_MODE: "TRUE"
+      VIEW_DISTANCE: "10"
+      ENABLE_RCON: "true"
+      RCON_PASSWORD: "${RCON_PASSWORD:-changeme}"
+    volumes:
+      - ./data:/data
+```
+
+Start it (all world/player/mod data lives in `./data`):
+
+```sh
+docker compose up -d
+docker compose logs -f minecraft   # watch packwiz install + server startup
+```
+
+The container installs/updates the pack via `PACKWIZ_URL` on every start, honoring the
+pack's `side` flags (only `server`/`both` mods). Override memory or the RCON password via a
+local `.env` file or shell env (`MEMORY=12G RCON_PASSWORD=... docker compose up -d`).
+
+
 ## Editing
 
 ```sh

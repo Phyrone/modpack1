@@ -17,3 +17,6 @@ dynamic-resource-pack-cache/
 .mixin.out/
 .physics_mod_cache/
 .sable/
+
+# Docker server data (bind-mounted)
+data/

@@ -14,4 +14,5 @@ dynamic-resource-pack-cache/
 .mixin.out/
 .physics_mod_cache/
 .sable/
+data/
 .DS_Store

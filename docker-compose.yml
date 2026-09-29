@@ -1,0 +1,30 @@
+services:
+  minecraft:
+    image: itzg/minecraft-server:java21
+    container_name: a-modpack-server
+    restart: unless-stopped
+    tty: true
+    stdin_open: true
+    ports:
+      - "25565:25565" # game
+      - "25575:25575" # RCON
+    environment:
+      EULA: "TRUE"
+
+      # Loader/version must match pack.toml (resolved before packwiz runs)
+      TYPE: "NEOFORGE"
+      VERSION: "1.21.1"
+      NEOFORGE_VERSION: "21.1.252"
+
+      # packwiz pack definition; server-side mods are installed automatically
+      PACKWIZ_URL: "https://raw.githubusercontent.com/Phyrone/modpack1/main/pack.toml"
+
+      # Server settings
+      MEMORY: "${MEMORY:-8G}"
+      MOTD: "A Modpack (packwiz)"
+      ONLINE_MODE: "TRUE"
+      VIEW_DISTANCE: "10"
+      ENABLE_RCON: "true"
+      RCON_PASSWORD: "${RCON_PASSWORD:-changeme}"
+    volumes:
+      - ./data:/data
