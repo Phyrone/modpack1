@@ -47,5 +47,7 @@ services:
       MOTD: "A Modpack (packwiz)"
       ONLINE_MODE: "TRUE"
       VIEW_DISTANCE: "10"
+      # Disable the vanilla "flying is not enabled" kick (needed for planes/vehicles)
+      ALLOW_FLIGHT: "TRUE"
     volumes:
       - ./data:/data
