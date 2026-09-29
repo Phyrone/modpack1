@@ -1,10 +1,6 @@
 filename = 'Oh-The-Biomes-Weve-Gone-NeoForge-2.6.0.jar'
 name = "Oh The Biomes We've Gone"
 side = 'both'
-x-prismlauncher-loaders = [ 'neoforge' ]
-x-prismlauncher-mc-versions = [ '1.21.1' ]
-x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = '2.6.0-NeoForge'
 
 [download]
 hash = '76ceb60d1058bca79e13c7059dc42f8b230cb480986e1d88b505f958fc3922a00bef463eb267c9b676be053bec1e71806fbc27fb2a41df6dcd9881a0f0711f77'
@@ -15,23 +11,3 @@ url = 'https://cdn.modrinth.com/data/NTi7d3Xc/versions/aPEcdSHb/Oh-The-Biomes-We
 [update.modrinth]
 mod-id = 'NTi7d3Xc'
 version = 'aPEcdSHb'
-
-[[x-prismlauncher-dependencies]]
-addonId = '8BmcQJ2H'
-type = 'REQUIRED'
-
-[[x-prismlauncher-dependencies]]
-addonId = '6AQIaxuO'
-type = 'OPTIONAL'
-
-[[x-prismlauncher-dependencies]]
-addonId = 'ziOp6EO8'
-type = 'REQUIRED'
-
-[[x-prismlauncher-dependencies]]
-addonId = 'g8NOG5OR'
-type = 'REQUIRED'
-
-[[x-prismlauncher-dependencies]]
-addonId = 'kkmrDlKT'
-type = 'REQUIRED'

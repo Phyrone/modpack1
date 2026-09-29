@@ -1,10 +1,6 @@
 filename = 'dtquark-2.6.1.jar'
 name = 'Dynamic Trees - Quark'
 side = 'both'
-x-prismlauncher-loaders = [ 'neoforge' ]
-x-prismlauncher-mc-versions = [ '1.21.1' ]
-x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = '2.6.1'
 
 [download]
 hash = 'c0e4ec5933d12869f7d24e33468a1902736e0705e550eb45408328946a63af2265dc2fdf4bbf3d97e33bbd9c8fd7c2612f6a0ada8c5795c74ea429a75d99adf4'
@@ -15,15 +11,3 @@ url = 'https://cdn.modrinth.com/data/9paueCZy/versions/rn17sHPV/dtquark-2.6.1.ja
 [update.modrinth]
 mod-id = '9paueCZy'
 version = 'rn17sHPV'
-
-[[x-prismlauncher-dependencies]]
-addonId = 'vdjF5PL5'
-type = 'REQUIRED'
-
-[[x-prismlauncher-dependencies]]
-addonId = 'qnQsVE2z'
-type = 'REQUIRED'
-
-[[x-prismlauncher-dependencies]]
-addonId = 'qaO9Dqpu'
-type = 'OPTIONAL'

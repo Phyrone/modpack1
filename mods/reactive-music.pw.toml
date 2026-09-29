@@ -1,11 +1,6 @@
 filename = 'reactivemusic-neoforge-1.3.5+1.21.1.jar'
 name = 'Reactive Music'
 side = 'client'
-x-prismlauncher-dependencies = []
-x-prismlauncher-loaders = [ 'neoforge' ]
-x-prismlauncher-mc-versions = [ '1.21', '1.21.1 rc1', '1.21.1-rc1', '1.21.1' ]
-x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = '1.3.5+1.21.1-neoforge'
 
 [download]
 hash = 'faae7a2bdc191f441d7cff8caa2d13d3acb9e0429ebce72b3e5e1b0344a2902f91a32b48b71818bad99df7ece812baaff443480b5712904cec0fefb5d45f80ff'

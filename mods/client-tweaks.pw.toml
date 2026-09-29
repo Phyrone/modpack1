@@ -1,10 +1,6 @@
 filename = 'clienttweaks-neoforge-1.21.1-21.1.15.jar'
 name = 'Client Tweaks'
 side = 'client'
-x-prismlauncher-loaders = [ 'neoforge' ]
-x-prismlauncher-mc-versions = [ '1.21.1' ]
-x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = '21.1.15+neoforge-1.21.1'
 
 [download]
 hash = 'bc884348f4f1a23f1e692f841f29047bcb7e78b982e8e4905a771e847ed897fe6018a0133687a0a8a98e0b2052487bb381821af5fdcdf31ac9c272e91581187f'
@@ -15,7 +11,3 @@ url = 'https://cdn.modrinth.com/data/vPNqo58Q/versions/dRLEbNAr/clienttweaks-neo
 [update.modrinth]
 mod-id = 'vPNqo58Q'
 version = 'dRLEbNAr'
-
-[[x-prismlauncher-dependencies]]
-addonId = 'MBAkmtvl'
-type = 'REQUIRED'

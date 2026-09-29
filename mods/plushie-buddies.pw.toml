@@ -1,11 +1,6 @@
 filename = 'plushie_buddies-1.0.1-neofroge-1.21.1.jar'
 name = 'Plushie Buddies'
 side = 'both'
-x-prismlauncher-dependencies = []
-x-prismlauncher-loaders = [ 'neoforge' ]
-x-prismlauncher-mc-versions = [ '1.21.1' ]
-x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = '1.0.1-neofroge-1.21.1'
 
 [download]
 hash = 'c703c37ad3916186528755392a7316c2aa9aa7fbd97a423df06aba70a300c337ee4044de56da075cb3d09dd41d7740b9e8dd5073ebb71ec9c6bb992952391384'

@@ -1,10 +1,6 @@
 filename = 'transparent-neoforge-21.1.0.jar'
 name = 'Transparent'
 side = 'client'
-x-prismlauncher-loaders = [ 'neoforge' ]
-x-prismlauncher-mc-versions = [ '1.21.1' ]
-x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = '21.1.0-neoforge'
 
 [download]
 hash = 'b65e04a82dc5f20c385debe227688a722fb211755ef2061c9141bf498df4b94977492db598206c46d3833a20856b477a12d3e0391150ed7186ffaf640a6e44e6'
@@ -15,7 +11,3 @@ url = 'https://cdn.modrinth.com/data/zp4jb9oQ/versions/VPG6hE9S/transparent-neof
 [update.modrinth]
 mod-id = 'zp4jb9oQ'
 version = 'VPG6hE9S'
-
-[[x-prismlauncher-dependencies]]
-addonId = 'Q8xUICr6'
-type = 'REQUIRED'

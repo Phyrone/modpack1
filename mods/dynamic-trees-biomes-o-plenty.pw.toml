@@ -1,10 +1,6 @@
 filename = 'dtbop-3.4.0.jar'
 name = "Dynamic Trees - Biomes O' Plenty"
 side = 'both'
-x-prismlauncher-loaders = [ 'neoforge' ]
-x-prismlauncher-mc-versions = [ '1.21.1' ]
-x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = '3.4.0'
 
 [download]
 hash = '6aa2c96eaad69ba271bd90d394129e8afa02e23d0b0f07704f7c2e781cde741dbaab87cd059fc3a99bf9bc0a3fa0c3da37f7b4aae0c5f551fc7e206a401f750b'
@@ -15,15 +11,3 @@ url = 'https://cdn.modrinth.com/data/8QHjGuhP/versions/YZ8VDP0n/dtbop-3.4.0.jar'
 [update.modrinth]
 mod-id = '8QHjGuhP'
 version = 'YZ8VDP0n'
-
-[[x-prismlauncher-dependencies]]
-addonId = 'HXF82T3G'
-type = 'REQUIRED'
-
-[[x-prismlauncher-dependencies]]
-addonId = 'vdjF5PL5'
-type = 'REQUIRED'
-
-[[x-prismlauncher-dependencies]]
-addonId = 'qaO9Dqpu'
-type = 'OPTIONAL'

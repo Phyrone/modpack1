@@ -1,10 +1,6 @@
 filename = 'createoritechcompat-1.20.1-1.0.jar'
 name = 'Create Oritech Compat'
 side = 'both'
-x-prismlauncher-loaders = [ 'neoforge' ]
-x-prismlauncher-mc-versions = [ '1.21.1' ]
-x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'createoritechcompat-1.21.1-1.0.jar'
 
 [download]
 hash = '27bad2e5b1fcdd83cf715c49201557b8943289a4'
@@ -14,11 +10,3 @@ mode = 'metadata:curseforge'
 [update.curseforge]
 file-id = 6255439
 project-id = 1211589
-
-[[x-prismlauncher-dependencies]]
-addonId = '1030830'
-type = 'REQUIRED'
-
-[[x-prismlauncher-dependencies]]
-addonId = '328085'
-type = 'REQUIRED'

@@ -1,11 +1,6 @@
 filename = 'ars_nouveau-1.21.1-5.13.2.jar'
 name = 'Ars Nouveau'
 side = 'both'
-x-prismlauncher-dependencies = []
-x-prismlauncher-loaders = [ 'neoforge' ]
-x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
-x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = '5.13.2'
 
 [download]
 hash = '088bdb9c1df8f00548eec3ef820394870597ac1594a85b9c9c821df00c046a1e551f96158c33f6e6b4a5bed686511c1c78cd62f140bbcc41e39be944b3e313da'

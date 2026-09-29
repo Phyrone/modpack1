@@ -1,10 +1,6 @@
 filename = 'ChickenChunks-1.21.1-2.12.0.103.jar'
 name = 'Chicken Chunks 1.8.+'
 side = 'both'
-x-prismlauncher-loaders = [ 'neoforge' ]
-x-prismlauncher-mc-versions = [ '1.21.1' ]
-x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'Chicken Chunks 1.21.1-2.12.0.103'
 
 [download]
 hash = 'b6a0435c373f397eb2bad470b0480cc8ae6910e8'
@@ -14,7 +10,3 @@ mode = 'metadata:curseforge'
 [update.curseforge]
 file-id = 6045209
 project-id = 243883
-
-[[x-prismlauncher-dependencies]]
-addonId = '242818'
-type = 'REQUIRED'

@@ -1,10 +1,6 @@
 filename = 'oc2-MC1.21.1-neoforge-0.7.2+1dbce6a.jar'
 name = 'OpenComputers II'
 side = 'both'
-x-prismlauncher-loaders = [ 'neoforge' ]
-x-prismlauncher-mc-versions = [ '1.21.1' ]
-x-prismlauncher-release-type = 'release'
-x-prismlauncher-version-number = 'MC1.21.1-neoforge-0.7.2'
 
 [download]
 hash = '3d8d03a587e076f58fd0087a3863473fa74f7deb19ffbb1c77d45ec0965a8e5996538bb3599f672f7a726e21b0026825529874fc804c733aaf5fa60f4cab59fa'
@@ -15,19 +11,3 @@ url = 'https://cdn.modrinth.com/data/xkOonJ4E/versions/l7h16bPr/oc2-MC1.21.1-neo
 [update.modrinth]
 mod-id = 'xkOonJ4E'
 version = 'l7h16bPr'
-
-[[x-prismlauncher-dependencies]]
-addonId = 'L23x7zL8'
-type = 'OPTIONAL'
-
-[[x-prismlauncher-dependencies]]
-addonId = 'nPQ9xkPg'
-type = 'REQUIRED'
-
-[[x-prismlauncher-dependencies]]
-addonId = 'lhGA9TYQ'
-type = 'REQUIRED'
-
-[[x-prismlauncher-dependencies]]
-addonId = 'r7tyeVvQ'
-type = 'OPTIONAL'
