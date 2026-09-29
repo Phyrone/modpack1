@@ -1,14 +1,6 @@
 hash-format = "sha256"
 
 [[files]]
-file = ".github/workflows/refresh.yml"
-hash = "2819f17617b581bd2709340bb230473526a78f7f04a16f84b57e99c10d979d66"
-
-[[files]]
-file = "README.md"
-hash = "156224a7860bc9627bf5ea6ac932712d1ab37af9de410d54b1575ceb18c17644"
-
-[[files]]
 file = "config/BBEConfig.json"
 hash = "a1bdbd84f5af95c2de06cb8e8d05a9b34595a2f8bffc8a34590e605ac66f3eb9"
 
@@ -87,10 +79,6 @@ hash = "0f61ac30bfc78653a30d715f793e30a6a43d6715106706487efd0aea5d43a84c"
 [[files]]
 file = "config/NoChatReports/NCR-ServerPreferences.json"
 hash = "df32843b853e0a493ef3a9b1e39276818294353fbb0d833f7f61e77da0f5bca1"
-
-[[files]]
-file = "config/NoChatReports/README.md"
-hash = "c52b76ccad2bd1063a22c7f6bb9e7c5db6b00fb53a6fd605585972ee0e5fc01f"
 
 [[files]]
 file = "config/ReactiveMusic.json5"
@@ -2695,10 +2683,6 @@ hash = "8e23412c587a2350337de184b152a297778b3760f8b40dc5c2aac29f4b7a8cd3"
 [[files]]
 file = "defaultconfigs/biolith/general.json"
 hash = "7f1e58be2cf7db18181869804bb09823ee93a4ea863d560036e8a05954bcf806"
-
-[[files]]
-file = "docker-compose.yml"
-hash = "8b341d6cac2d282912ffbc182b84aa4df0728f0dab38703b93d26c8463950e73"
 
 [[files]]
 file = "mods/3dskinlayers.pw.toml"

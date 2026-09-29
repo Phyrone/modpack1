@@ -16,3 +16,11 @@ dynamic-resource-pack-cache/
 .sable/
 data/
 .DS_Store
+
+# Repo-only files (not part of the installed pack)
+.github/
+README.md
+docker-compose.yml
+LICENSE
+.gitignore
+.packwizignore
