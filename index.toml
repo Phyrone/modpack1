@@ -1,6 +1,14 @@
 hash-format = "sha256"
 
 [[files]]
+file = ".github/workflows/refresh.yml"
+hash = "13de0ac6abde40c3219e4be8cb9e172794934d5a7031cb3349eb0fd96b1a0db8"
+
+[[files]]
+file = "README.md"
+hash = "7ee8073b8ff3b60629a5995a7f208862e23c8773aec108c3262d7178a9cfe35e"
+
+[[files]]
 file = "config/BBEConfig.json"
 hash = "a1bdbd84f5af95c2de06cb8e8d05a9b34595a2f8bffc8a34590e605ac66f3eb9"
 
@@ -99,14 +107,6 @@ hash = "d50085eff7c760518e568793eab23f1d0ec21135340e8f5ba5f8ba17e6a92ed7"
 [[files]]
 file = "config/Veinminer/settings.json"
 hash = "e9e5119a09b200f218354d9530ed0fd946f322ecfe4b5b4f55d30e2c8de3594b"
-
-[[files]]
-file = "config/Veinminer/update/veinminer-client-neoforge-2.11.2+1.21.1.jar"
-hash = "a897851b9e5fffd9d17e89b7ad67aa7ac2bd6322272ab0cc20c0feb52e5ee5b0"
-
-[[files]]
-file = "config/Veinminer/update/veinminer-neoforge-2.11.2+1.21.1.jar"
-hash = "2d70ecdbf24b7e5e3ab6f19715dcb37d956931e0b65e7026b4d5524e002c46e4"
 
 [[files]]
 file = "config/addonslib-common.toml"
