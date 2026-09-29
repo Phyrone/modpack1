@@ -1,0 +1,192 @@
+[vm]
+	# Default: 2147483648
+	# Range: 0 ~ 9223372036854775807
+	maxAllocatedMemory = 2147483648
+	#Number of worker threads used to run virtual machines.
+	#Leave zero for automatic. Controls overall machine load. Server tick is not measurably
+	#impacted by virtual machines, this just controls overall maximum machine load.
+	# Default: 0
+	# Range: > 0
+	workerCount = 0
+	#Cycles a RISC-V computer may retire per second, i.e. its clock speed.
+	# Default: 25000000
+	# Range: > 1
+	riscvCycleBudgetPerSecond = 25000000
+	#Cycles a Z80 computer may retire per second, i.e. its clock speed.
+	# Default: 4000000
+	# Range: > 1
+	z80CycleBudgetPerSecond = 4000000
+
+	[vm.sizes]
+		#Capacity of small memory, in bytes.
+		# Default: 2097152
+		# Range: > 1
+		memorySmallSize = 2097152
+		#Capacity of medium memory, in bytes.
+		# Default: 4194304
+		# Range: > 1
+		memoryMediumSize = 4194304
+		#Capacity of large memory, in bytes.
+		# Default: 8388608
+		# Range: > 1
+		memoryLargeSize = 8388608
+		#Capacity of small hard drives, in bytes.
+		# Default: 2097152
+		# Range: > 1
+		hardDriveSmallSize = 2097152
+		#Capacity of medium hard drives, in bytes.
+		# Default: 4194304
+		# Range: > 1
+		hardDriveMediumSize = 4194304
+		#Capacity of large hard drives, in bytes.
+		# Default: 8388608
+		# Range: > 1
+		hardDriveLargeSize = 8388608
+		#Capacity of floppy disks, in bytes.
+		# Default: 524288
+		# Range: > 1
+		floppySize = 524288
+
+	[energy.blocks]
+		# Default: 0.1
+		# Range: 0.0 ~ Infinity
+		busCableEnergyPerTick = 0.1
+		# Default: 0.5
+		# Range: 0.0 ~ Infinity
+		busInterfaceEnergyPerTick = 0.5
+		# Default: 2000
+		# Range: > 0
+		computerEnergyStorage = 2000
+		# Default: 2500
+		# Range: > 0
+		chargerEnergyPerTick = 2500
+		# Default: 10000
+		# Range: > 0
+		chargerEnergyStorage = 10000
+		# Default: 20
+		# Range: > 0
+		projectorEnergyPerTick = 20
+		# Default: 2000
+		# Range: > 0
+		projectorEnergyStorage = 2000
+		# Default: 20
+		# Range: > 0
+		internetGatewayEnergyPerPacket = 20
+		# Default: 2000
+		# Range: > 0
+		internetGatewayEnergyStorage = 2000
+
+	[energy.entities]
+		# Default: 0.5
+		# Range: 0.0 ~ Infinity
+		robotCpuEnergyMultiplier = 0.5
+		# Default: 750000
+		# Range: > 0
+		robotEnergyStorage = 750000
+
+	[energy.items]
+		# Default: 10
+		# Range: > 0
+		riscvCpuEnergyPerTick = 10
+		# Default: 2
+		# Range: > 0
+		z80CpuEnergyPerTick = 2
+		# Default: 0.5
+		# Range: 0.0 ~ Infinity
+		memoryEnergyPerMegabytePerTick = 0.5
+		# Default: 1.0
+		# Range: 0.0 ~ Infinity
+		hardDriveEnergyPerMegabytePerTick = 1.0
+		# Default: 1
+		# Range: > 0
+		redstoneInterfaceCardEnergyPerTick = 1
+		# Default: 1
+		# Range: > 0
+		serialInterfaceCardEnergyPerTick = 1
+		# Default: 2
+		# Range: > 0
+		networkInterfaceEnergyPerTick = 2
+		# Default: 3
+		# Range: > 0
+		networkTunnelEnergyPerTick = 3
+		# Default: 1
+		# Range: > 0
+		fileImportExportCardEnergyPerTick = 1
+		# Default: 1
+		# Range: > 0
+		soundCardEnergyPerTick = 1
+		# Default: 2
+		# Range: > 0
+		blockOperationsModuleEnergyPerTick = 2
+		# Default: 1
+		# Range: > 0
+		inventoryOperationsModuleEnergyPerTick = 1
+
+[admin]
+	fakePlayerUUID = "e39dd9a7-514f-4a2d-aa5e-b6030621416d"
+
+	[admin.storage]
+		# Default: 1024
+		# Range: > 0
+		maxBlobCount = 1024
+		# Default: 64
+		# Range: > 0
+		maxTrashedBlobCount = 64
+		# Default: 168
+		# Range: > 0
+		blobEvictionGraceHours = 168
+		# Default: 16777216
+		# Range: > 0
+		maxBlobCapacity = 16777216
+
+	[admin.network]
+		# Default: 163840
+		# Range: > 0
+		projectorAverageMaxBytesPerSecond = 163840
+		# Default: 98304
+		# Range: > 0
+		soundCardAverageMaxBytesPerSecond = 98304
+
+	[admin.virtual_network]
+		# Default: 12
+		# Range: > 0
+		ethernetFrameTimeToLive = 12
+		# Default: 32
+		# Range: > 0
+		hubEthernetFramesPerTick = 32
+
+	[admin.internet]
+		#Whether computers may open connections to the outside world.
+		#Traffic leaves from this server's address, so anything a computer reaches sees the
+		#connection as coming from the server, not from the player. The address and port filters
+		#below decide what is reachable; turn this off to refuse everything.
+		internetEnabled = true
+		#Addresses computers may NOT reach, as address (1.2.3.4), CIDR block (10.0.0.0/8),
+		#inclusive range (1.2.3.4-1.2.3.9), local interface (@eth0 or @2), or host name.
+		#Host names are re-resolved periodically.
+		#Loopback, multicast, broadcast and the cloud instance metadata address are always denied.
+		#The defaults add the private and link-local ranges. They cannot cover this server's own
+		#public address, which behind NAT is on none of its interfaces: add it by hand if computers
+		#must not dial back into services this machine hosts.
+		internetDeniedHosts = ["10.0.0.0/8", "100.64.0.0/10", "169.254.0.0/16", "172.16.0.0/12", "192.0.0.0/24", "192.168.0.0/16", "198.18.0.0/15", "192.88.99.0/24"]
+		#Addresses computers MAY reach, in the same syntax as the denied list.
+		#Empty allows everything that is not denied. With any entry present, only listed addresses
+		#are permitted, minus anything the denied list covers.
+		internetAllowedHosts = []
+		#Deny every subnet this server's own network interfaces sit on.
+		#Re-resolved periodically so interfaces brought up later are covered, too.
+		internetDenyLocalSubnets = true
+		#Ports computers may NOT connect to, as single ports or inclusive from-to ranges.
+		internetDeniedPorts = ["25", "465", "587", "137-139", "445", "1900", "3389", "11211"]
+		#Concurrent connections across the whole server.
+		# Default: 128
+		# Range: 1 ~ 4096
+		internetSessionsTotal = 128
+		#Maximum throughput for one gateway, in bytes per second, each way.
+		# Default: 65536
+		# Range: > 30280
+		internetBytesPerSecond = 65536
+		#Maximum throughput across all gateways on the server, in bytes per second, each way.
+		# Default: 524288
+		# Range: > 30280
+		internetBytesPerSecondTotal = 524288

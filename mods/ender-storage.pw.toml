@@ -1,0 +1,21 @@
+filename = 'EnderStorage-1.21.1-2.13.0.191.jar'
+name = 'Ender Storage'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '2.13.0.191'
+
+[download]
+hash = '4a65d6c2d098e4db61237ff83b68f7d03d5dcd16572c6c12d159c9c1f2f49c7abcc1792432b0bd88589549cec8a4705b292492fbe1913b624537c2e4fbc968f2'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/BbrHg80P/versions/iDxzdaLT/EnderStorage-1.21.1-2.13.0.191.jar'
+
+[update.modrinth]
+mod-id = 'BbrHg80P'
+version = 'iDxzdaLT'
+
+[[x-prismlauncher-dependencies]]
+addonId = '2gq0ALnz'
+type = 'REQUIRED'

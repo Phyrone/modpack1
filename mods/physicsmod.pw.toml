@@ -1,0 +1,18 @@
+filename = 'physics-mod-3.0.34-mc-1.21.1-neoforge.jar'
+name = 'Physics Mod'
+side = 'client'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '3.0.34'
+
+[download]
+hash = '267fd1cd77fff1673af254caeadd8ebdd6126d97454a124ceec3f718a4d2ca51b3c2098ba21101a0e408978d1a62a8c4f82cfb4f43d808303574cd43711057ec'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/Xy8aRQKS/versions/ZhWEOiAq/physics-mod-3.0.34-mc-1.21.1-neoforge.jar'
+
+[update.modrinth]
+mod-id = 'Xy8aRQKS'
+version = 'ZhWEOiAq'

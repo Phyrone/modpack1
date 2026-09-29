@@ -1,0 +1,21 @@
+filename = 'easy-piglins-neoforge-1.21.1-1.1.0.jar'
+name = 'Easy Piglins'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
+x-prismlauncher-release-type = 'alpha'
+x-prismlauncher-version-number = 'neoforge-1.21.1-1.1.0'
+
+[download]
+hash = '22a1069a339f5f87760adea1a14ac98fef052f1a92ea59297ad4e0db078482b315d6e4cf673bdaa4130c982736577358bef2c2ecbc3aa73eee46d733ad596f79'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/l6n94pax/versions/C0ZG4QHo/easy-piglins-neoforge-1.21.1-1.1.0.jar'
+
+[update.modrinth]
+mod-id = 'l6n94pax'
+version = 'C0ZG4QHo'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'u6dRKJwZ'
+type = 'OPTIONAL'

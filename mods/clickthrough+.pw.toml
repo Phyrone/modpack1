@@ -1,0 +1,21 @@
+filename = 'clickthrough-plus-neoforge-3.5.0+1.21.1.jar'
+name = 'ClickThrough Plus'
+side = 'client'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '3.5.0+1.21.1'
+
+[download]
+hash = 'bdb9a07f26a6af0e43ff1180f9227c41d0136814f78b1f445e66efbe3b877eb57076afdc56782fa47a4658b864e938a7fba9d1e229d86c088812cfb501a123e0'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/fJi8nm80/versions/PvSEBLnn/clickthrough-plus-neoforge-3.5.0%2B1.21.1.jar'
+
+[update.modrinth]
+mod-id = 'fJi8nm80'
+version = 'PvSEBLnn'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'lhGA9TYQ'
+type = 'REQUIRED'

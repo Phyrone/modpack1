@@ -1,0 +1,19 @@
+# Compiled jars are never committed (packwiz metadata is the source of truth)
+*.jar
+.DS_Store
+.cache/
+.packwiz.toml
+
+# Runtime / launcher junk
+logs/
+crash-reports/
+saves/
+downloads/
+journeymap/
+showdown/
+essential/
+dynamic-data-pack-cache/
+dynamic-resource-pack-cache/
+.mixin.out/
+.physics_mod_cache/
+.sable/

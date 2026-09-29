@@ -1,0 +1,13 @@
+{
+  "customizedSnowBlocks": [
+    {
+      "blockID": "minecraft:snow_block"
+    },
+    {
+      "blockID": "minecraft:snow"
+    },
+    {
+      "blockID": "minecraft:powder_snow"
+    }
+  ]
+}

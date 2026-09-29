@@ -1,0 +1,21 @@
+filename = 'rusticdelight-neoforge-1.21-1.7.1.jar'
+name = 'Rustic Delight'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21', '1.21.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.7.1'
+
+[download]
+hash = '1aa22e862f0775699782ee20aa5cf75ce528404711cf8587cb7a732c710aa76f4d14035d2cdd0ed92980eb5f9388765b7f17a5aa31bdeadb85382aad488a6d2a'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/foa4fGIH/versions/sAaG4pSA/rusticdelight-neoforge-1.21-1.7.1.jar'
+
+[update.modrinth]
+mod-id = 'foa4fGIH'
+version = 'sAaG4pSA'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'R2OftAxM'
+type = 'REQUIRED'

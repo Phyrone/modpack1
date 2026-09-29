@@ -1,0 +1,43 @@
+name: packwiz refresh
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.pw.toml'
+      - 'pack.toml'
+      - 'config/**'
+      - 'defaultconfigs/**'
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-actions[bot]'
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: 'stable'
+          cache: true
+
+      - name: Install packwiz
+        run: go install github.com/packwiz/packwiz@latest
+
+      - name: Refresh index
+        run: '"$HOME/go/bin/packwiz" refresh'
+
+      - name: Commit if changed
+        run: |
+          if ! git diff --quiet; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add index.toml pack.toml
+            git commit -m "chore: packwiz refresh [skip ci]"
+            git push
+          else
+            echo "index.toml already up to date"
+          fi

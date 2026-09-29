@@ -1,0 +1,13 @@
+name = "A Modpack"
+author = "Phyrone"
+version = "1.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "3dad57a3fc0bd17817a87555c709b2b91403b3e03c011e245ab59e8d66cb677c"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.252"

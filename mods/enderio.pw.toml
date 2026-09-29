@@ -1,0 +1,37 @@
+filename = 'enderio-8.2.12-beta.jar'
+name = 'Ender IO'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge' ]
+x-prismlauncher-mc-versions = [ '1.21.1' ]
+x-prismlauncher-release-type = 'beta'
+x-prismlauncher-version-number = 'v8.2.12-beta'
+
+[download]
+hash = 'c4415c1e835fa7eaf7f4528fd685412151968b092e9be91528add11dd981943ba6243eee41ff73923df64d59d8f907901cb006edcb5c02783e73ab656524c995'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/49ZofO4f/versions/2bHl1dCW/enderio-8.2.12-beta.jar'
+
+[update.modrinth]
+mod-id = '49ZofO4f'
+version = '2bHl1dCW'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'XxWD5pD3'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'b1ZV3DIJ'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'u6dRKJwZ'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'gu7yAYhd'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'Ce6I4WUE'
+type = 'OPTIONAL'
