@@ -41,21 +41,29 @@ services:
     restart: unless-stopped
     tty: true
     stdin_open: true
+    stop_grace_period: 2m
     ports:
-      - "25565:25565" # game
-      - "25575:25575" # RCON
+      - "25565:25565" # game only; RCON (25575) stays internal
     environment:
       EULA: "TRUE"
       TYPE: "NEOFORGE"
       VERSION: "1.21.1"
       NEOFORGE_VERSION: "21.1.252"
       PACKWIZ_URL: "https://raw.githubusercontent.com/Phyrone/modpack1/main/pack.toml"
+      ENABLE_RCON: "true" # internal only (not published); needed for the direct console
+      JVM_OPTS: >-
+        -XX:+UnlockExperimentalVMOptions
+        -XX:+UseZGC
+        -XX:+ZGenerational
+        -XX:+AlwaysPreTouch
+        -XX:+DisableExplicitGC
+        -XX:+PerfDisableSharedMem
+        -XX:ZUncommitDelay=300
+      USE_AIKAR_FLAGS: "false"
       MEMORY: "${MEMORY:-8G}"
       MOTD: "A Modpack (packwiz)"
       ONLINE_MODE: "TRUE"
       VIEW_DISTANCE: "10"
-      ENABLE_RCON: "true"
-      RCON_PASSWORD: "${RCON_PASSWORD:-changeme}"
     volumes:
       - ./data:/data
 ```
@@ -68,8 +76,25 @@ docker compose logs -f minecraft   # watch packwiz install + server startup
 ```
 
 The container installs/updates the pack via `PACKWIZ_URL` on every start, honoring the
-pack's `side` flags (only `server`/`both` mods). Override memory or the RCON password via a
-local `.env` file or shell env (`MEMORY=12G RCON_PASSWORD=... docker compose up -d`).
+pack's `side` flags (only `server`/`both` mods). Override memory via a local `.env` file or
+shell env (`MEMORY=12G docker compose up -d`).
+
+### Console
+
+RCON stays enabled (it drives mc-server-runner's direct stdin wiring) but its port is **not
+published**, so it isn't reachable from outside. In this mode mc-server-runner hands the
+container TTY straight to the JVM, so attaching gives the *native* server console with
+colors and tab-completion:
+
+```sh
+docker compose attach minecraft   # detach with Ctrl-p Ctrl-q
+```
+
+Do **not** set `CREATE_CONSOLE_IN_PIPE`, or the TTY is replaced by a pipe and the native
+console (colors/completions) is lost. No itzg event hooks (`RCON_CMDS_*`) are configured.
+
+`JVM_OPTS` uses generational ZGC; it requires Java 21 (the `java21` image) and pairs with
+`MEMORY`.
 
 
 ## Editing

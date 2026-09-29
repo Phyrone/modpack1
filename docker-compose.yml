@@ -5,9 +5,10 @@ services:
     restart: unless-stopped
     tty: true
     stdin_open: true
+    stop_grace_period: 2m
     ports:
-      - "25565:25565" # game
-      - "25575:25575" # RCON
+      # Only the game port is published; RCON (25575) stays internal to the container.
+      - "25565:25565"
     environment:
       EULA: "TRUE"
 
@@ -19,12 +20,32 @@ services:
       # packwiz pack definition; server-side mods are installed automatically
       PACKWIZ_URL: "https://raw.githubusercontent.com/Phyrone/modpack1/main/pack.toml"
 
+      # RCON is kept enabled (default) but NOT published to the host. mc-server-runner
+      # only wires the container TTY straight to the server console when RCON is available
+      # (see hasRconCli() in mc-server-runner) and no console pipe is configured, which is
+      # what gives native colors + tab-completion over `docker compose attach`.
+      # Do NOT set CREATE_CONSOLE_IN_PIPE: the named pipe replaces the direct TTY with a
+      # pipe and disables the native console.
+      ENABLE_RCON: "true"
+
+      # No itzg event hooks (RCON_CMDS_STARTUP / _ON_CONNECT / _FIRST_CONNECT / ... left unset)
+
+      # Tuned ZGC (requires Java 21; pairs with MEMORY below)
+      JVM_OPTS: >-
+        -XX:+UnlockExperimentalVMOptions
+        -XX:+UseZGC
+        -XX:+ZGenerational
+        -XX:+AlwaysPreTouch
+        -XX:+DisableExplicitGC
+        -XX:+PerfDisableSharedMem
+        -XX:ZUncommitDelay=300
+      # Keep itzg from injecting Aikar/G1 flags that would conflict with ZGC
+      USE_AIKAR_FLAGS: "false"
+
       # Server settings
       MEMORY: "${MEMORY:-8G}"
       MOTD: "A Modpack (packwiz)"
       ONLINE_MODE: "TRUE"
       VIEW_DISTANCE: "10"
-      ENABLE_RCON: "true"
-      RCON_PASSWORD: "${RCON_PASSWORD:-changeme}"
     volumes:
       - ./data:/data
