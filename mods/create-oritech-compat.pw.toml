@@ -10,7 +10,6 @@ x-prismlauncher-version-number = 'createoritechcompat-1.21.1-1.0.jar'
 hash = '27bad2e5b1fcdd83cf715c49201557b8943289a4'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
-url = ''
 
 [update.curseforge]
 file-id = 6255439

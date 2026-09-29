@@ -10,7 +10,6 @@ x-prismlauncher-version-number = 'ProjectRed-1.21.1-4.23.0-beta+8-exploration.ja
 hash = '49d139841d385bffb05460b4c59cc564cafb5bc4'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
-url = ''
 
 [update.curseforge]
 file-id = 8438005

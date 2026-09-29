@@ -10,7 +10,6 @@ x-prismlauncher-version-number = 'ProjectRed-1.21.1-4.23.0-beta+8-illumination.j
 hash = '8ee664f4c13396fb849735d56dbf038a792f3607'
 hash-format = 'sha1'
 mode = 'metadata:curseforge'
-url = ''
 
 [update.curseforge]
 file-id = 8438007
