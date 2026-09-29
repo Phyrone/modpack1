@@ -6,6 +6,7 @@ on:
     paths:
       - '**.pw.toml'
       - 'pack.toml'
+      - '.packwizignore'
       - 'config/**'
       - 'defaultconfigs/**'
   workflow_dispatch:
