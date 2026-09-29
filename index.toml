@@ -3300,11 +3300,6 @@ hash = "9cfae08dd621549b59f23e69f8488ce8f50ca1d72f034ca9b6208c410c9f547e"
 metafile = true
 
 [[files]]
-file = "mods/essential.pw.toml"
-hash = "12209990e7aef92ad8ab8b9b057ef9ebb89d8d8fe1b55db891d17d0c71cc3491"
-metafile = true
-
-[[files]]
 file = "mods/expanded-delight.pw.toml"
 hash = "3a99e7817780dddf622691748f3ad4ecc72e07395fcd6ceaa523691e4c993745"
 metafile = true
@@ -3632,6 +3627,11 @@ metafile = true
 [[files]]
 file = "mods/mezzconfig.pw.toml"
 hash = "ed46b249937544ad5936fedfe2f3054789b52d3fec7c5701426b021d03f94642"
+metafile = true
+
+[[files]]
+file = "mods/mffs.pw.toml"
+hash = "f8bdbf8dc35dc01eaaac39d65ad319fc4b06a687df3a07a5d69dec3bcc685759"
 metafile = true
 
 [[files]]
