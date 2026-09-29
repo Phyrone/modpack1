@@ -1,0 +1,17 @@
+# Never index runtime artifacts
+*.jar
+*.jar.disabled
+config/Veinminer/update/
+logs/
+crash-reports/
+saves/
+downloads/
+journeymap/
+showdown/
+essential/
+dynamic-data-pack-cache/
+dynamic-resource-pack-cache/
+.mixin.out/
+.physics_mod_cache/
+.sable/
+.DS_Store
