@@ -2826,7 +2826,7 @@ metafile = true
 
 [[files]]
 file = "mods/better-clouds.pw.toml"
-hash = "010cc854fe789f06c98430bf37bd83688f33c5dade5c9702cabb5216a81396e6"
+hash = "09d5617a9cc9e2cfe2d9bc225f1c757ab4eb4b8bc9dd79e76c17178b931e3646"
 metafile = true
 
 [[files]]
@@ -2986,7 +2986,7 @@ metafile = true
 
 [[files]]
 file = "mods/controlify.pw.toml"
-hash = "6d65f67eab000d747d33f1f47d0c1207d48dfa9e8a65882a7dce8735c8c05f15"
+hash = "bbd4323a9e3d9a17203afb611c34adcf6b52111446060985bdd01ba9e3409763"
 metafile = true
 
 [[files]]
